@@ -1,4 +1,4 @@
 export default function signUpUser(firstName, lastName) {
   return Promise.resolve({ firstName, lastName });
 }
-console.log(signUpUser('Bob', 'Dylan'));
+// console.log(signUpUser('Bob', 'Dylan'));
