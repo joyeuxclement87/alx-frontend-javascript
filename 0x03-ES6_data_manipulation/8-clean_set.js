@@ -5,13 +5,13 @@
 // The string contains all the values of the set separated by -.
 
 export default function cleanSet(set, startString) {
-  const strings = [];
+  const str = [];
 
   if (startString === '' || typeof startString !== 'string') return '';
   set.forEach((s) => {
     if (typeof s === 'string' && s.startsWith(startString)) {
-      strings.push(s.slice(startString.length));
+      str.push(s.slice(startString.length));
     }
   });
-  return strings.join('-');
+  return str.join('-');
 }
